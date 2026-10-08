@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Резюме</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+  <div class="name">Юсупов Эрик Рустамович</div>
+  <div class="subtitle">3 курс, ТУСУР · 11.03.04 Электроника и наноэлектроника</div>
+
+  <div class="tags">
+    <span class="tag">Backend</span>
+    <span class="tag">Embedded</span>
+    <span class="tag">Algorithms</span>
+  </div>
+
+  <div class="contacts">
+    <span>Telegram: <a href="https://t.me/South_Fox">@South_Fox</a></span>
+    <span>Email: <a href="mailto:grammarline@yandex.ru">grammarline@yandex.ru</a></span>
+    <span>GitHub: <a href="https://github.com/TeaGuardian/">TeaGuardian</a></span>
+  </div>
+
+  <div class="wish">
+    Ищу практику / стажировку. Заинтересован в продолжении сотрудничества.
+    Рассматриваю частичную занятость или удалённую работу на время обучения
+    с переходом на полный рабочий день с 8-го семестра.
+  </div>
+</header>
+
+<hr>
+
+<!-- ТАЙМЛАЙН + ПРОЕКТЫ -->
+<div class="main">
+  <!-- Таймлайн -->
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-title">Яндекс.Лицей</div>
+      <div class="tl-desc">2 года · школьная программа</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-title">ТУСУР</div>
+      <div class="tl-desc">3 курс бакалавриата<br>11.03.04</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-title">Xtronik</div>
+      <div class="tl-desc">пол года · full-stack<br>embedded + backend</div>
+    </div>
+  </div>
+
+  <!-- Проекты -->
+  <div class="projects">
+    <!-- w2sys -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">w2sys</div>
+        <span class="badge badge-personal">личный</span>
+      </div>
+      <div class="project-desc">
+        Watch-party сервис: синхронизированный просмотр, загрузка и транскодинг видео, комнаты, чат
+      </div>
+      <div class="status">статус: приостановлен</div>
+      <div class="project-link">
+        <a href="https://github.com/TeaGuardian/Watch-Party">ресурсы проекта →</a>
+      </div>
+      <div class="project-stack">
+        Flask · Socket.IO · Celery · Peewee · PostgreSQL · Redis · MinIO · Docker · Nginx
+      </div>
+    </div>
+
+    <!-- LAS -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">LAS Analyzer</div>
+        <span class="badge badge-academic">академический</span>
+      </div>
+      <div class="project-desc">
+        Сегментация деревьев по облакам точек LiDAR + полноценная бенчмарк-среда с параллельными воркерами
+      </div>
+      <div class="project-link">
+        <a href="https://github.com/TeaGuardian/LAS-analyser">ресурсы проекта →</a>
+      </div>
+      <div class="project-stack">
+        Python · NumPy · SciPy · laspy · PyQt5 · ThreadPoolExecutor
+      </div>
+    </div>
+
+    <!-- ESP Logger -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">ESP32 Logger</div>
+        <span class="badge badge-work">рабочий</span>
+      </div>
+      <div class="project-desc">
+        Промышленный логгер на ESP32: FreeRTOS, dual-core, CAN, OTA, локальный веб-интерфейс
+      </div>
+      <div class="project-link" style="color: var(--muted);">
+        не распространяется
+      </div>
+      <div class="project-stack">
+        C/C++ · FreeRTOS · Arduino · PlatformIO · CAN · MQTT · SPIFFS/PSRAM
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- СТЕК -->
+<div class="stack-title">Технологический стек</div>
+<div class="stack-grid">
+  <div class="stack-card">
+    <h3>Backend & Realtime</h3>
+    <ul>
+      <li>Flask, Socket.IO</li>
+      <li>Celery, Redis</li>
+      <li>Peewee / PostgreSQL</li>
+      <li>MinIO / S3, Docker, Nginx</li>
+    </ul>
+  </div>
+
+  <div class="stack-card">
+    <h3>Embedded (ESP32)</h3>
+    <ul>
+      <li>FreeRTOS, dual-core</li>
+      <li>CAN, OTA</li>
+      <li>SPIFFS / PSRAM</li>
+      <li>MQTT, PlatformIO</li>
+    </ul>
+  </div>
+
+  <div class="stack-card">
+    <h3>Algorithms & Data</h3>
+    <ul>
+      <li>NumPy, SciPy</li>
+      <li>laspy (LiDAR)</li>
+      <li>PyQt5</li>
+    </ul>
+  </div>
+
+  <div class="stack-card">
+    <h3>Tools</h3>
+    <ul>
+      <li>Git, Docker</li>
+      <li>PlatformIO</li>
+      <li>Nginx, Linux</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
