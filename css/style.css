@@ -262,6 +262,46 @@ hr {
   margin-right: 6px;
 }
 
+/* ——— MOBILE ——— */
+@media (max-width: 640px) {
+  body {
+    padding: 16px 14px;
+    font-size: 13px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contacts span {
+    margin-right: 0;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .timeline {
+    padding-left: 15px;
+    margin-bottom: 4px;
+  }
+
+  .tl-item:first-child {
+    margin-top: 0;
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ——— PRINT ——— */
 @media print {
   body {
