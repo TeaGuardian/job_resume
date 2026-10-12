@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume — Erik Yusupov</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="name-row">
+    <div class="name">Erik Yusupov</div>
+    <div class="lang-switch">
+      <a href="index.html">RU</a>
+      <span class="sep">|</span>
+      <a href="index_en.html" class="active">EN</a>
+    </div>
+  </div>
+
+  <div class="subtitle">3rd year, TUSUR · 11.03.04 Electronics and Nanoelectronics</div>
+
+  <div class="tags">
+    <span class="tag">Backend</span>
+    <span class="tag">Embedded</span>
+    <span class="tag">Algorithms</span>
+  </div>
+
+  <div class="contacts">
+    <span>Telegram: <a href="https://t.me/South_Fox">@South_Fox</a></span>
+    <span>Email: <a href="mailto:grammarline@yandex.ru">grammarline@yandex.ru</a></span>
+    <span>GitHub: <a href="https://github.com/TeaGuardian/">TeaGuardian</a></span>
+  </div>
+
+  <div class="wish">
+    Looking for an internship / practicum. Interested in continuing collaboration.
+    Open to part-time or remote work while studying, with a transition to full-time
+    starting from the 8th semester.
+  </div>
+</header>
+
+<hr>
+
+<!-- TIMELINE + PROJECTS -->
+<div class="main">
+  <!-- Timeline -->
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-title"><a href="https://lms.yandex.ru/certificate/check">Yandex.Lyceum</a></div>
+      <div class="tl-desc">2 years · certificate: <span class="copyable" data-copy="2302157386" title="Click to copy">2302157386</span></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-title"><a href="https://tusur.ru/en">TUSUR</a></div>
+      <div class="tl-desc">3rd year Bachelor's<br>11.03.04</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-title"><a href="https://xtronik.ru/#question">Xtronik</a></div>
+      <div class="tl-desc">6 months · full-stack<br>embedded + backend</div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="projects">
+    <!-- w2sys -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">w2sys</div>
+        <span class="badge badge-personal">personal</span>
+      </div>
+      <div class="project-desc">
+        Watch-party service: synchronized viewing, video upload &amp; transcoding, rooms, chat
+      </div>
+      <div class="status">status: paused</div>
+      <div class="project-link">
+        <a href="https://github.com/TeaGuardian/Watch-Party">project resources →</a>
+      </div>
+      <div class="project-stack">
+        Flask · Socket.IO · Celery · Peewee · PostgreSQL · Redis · MinIO · Docker · Nginx
+      </div>
+    </div>
+
+    <!-- LAS -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">LAS Analyzer</div>
+        <span class="badge badge-academic">academic</span>
+      </div>
+      <div class="project-desc">
+        Tree segmentation from LiDAR point clouds + full benchmark environment with parallel workers
+      </div>
+      <div class="project-link">
+        <a href="https://github.com/TeaGuardian/LAS-analyser">project resources →</a>
+      </div>
+      <div class="project-stack">
+        Python · NumPy · SciPy · laspy · PyQt5 · ThreadPoolExecutor
+      </div>
+    </div>
+
+    <!-- ESP Logger -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">ESP32 Logger</div>
+        <span class="badge badge-work">work</span>
+      </div>
+      <div class="project-desc">
+        Industrial logger on ESP32: FreeRTOS, dual-core, CAN, OTA, local web interface
+      </div>
+      <div class="project-link" style="color: var(--muted);">
+        not publicly available
+      </div>
+      <div class="project-stack">
+        C/C++ · FreeRTOS · Arduino · PlatformIO · CAN · MQTT · SPIFFS/PSRAM
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- STACK -->
+<div class="stack-title">Tech Stack</div>
+<div class="stack-grid">
+  <div class="stack-card">
+    <h3>Backend & Realtime</h3>
+    <ul>
+      <li>Flask, Socket.IO</li>
+      <li>Celery, Redis</li>
+      <li>Peewee / PostgreSQL</li>
+      <li>MinIO / S3, Docker, Nginx</li>
+    </ul>
+  </div>
+
+  <div class="stack-card">
+    <h3>Embedded (ESP32)</h3>
+    <ul>
+      <li>FreeRTOS, dual-core</li>
+      <li>CAN, OTA</li>
+      <li>SPIFFS / PSRAM</li>
+      <li>MQTT, PlatformIO</li>
+    </ul>
+  </div>
+
+  <div class="stack-card">
+    <h3>Algorithms & Data</h3>
+    <ul>
+      <li>NumPy, SciPy</li>
+      <li>laspy (LiDAR)</li>
+      <li>PyQt5</li>
+    </ul>
+  </div>
+
+  <div class="stack-card">
+    <h3>Tools</h3>
+    <ul>
+      <li>Git, Docker</li>
+      <li>PlatformIO</li>
+      <li>Nginx, Linux</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.copyable').forEach(el => {
+  el.addEventListener('click', async () => {
+    const text = el.dataset.copy || el.textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+      const original = el.textContent;
+      el.textContent = 'copied';
+      el.classList.add('copied');
+      setTimeout(() => {
+        el.textContent = original;
+        el.classList.remove('copied');
+      }, 1200);
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNode(el);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.execCommand('copy');
+      sel.removeAllRanges();
+    }
+  });
+});
+</script>
+
+</body>
+</html>
