@@ -40,15 +40,15 @@
   <!-- Таймлайн -->
   <div class="timeline">
     <div class="tl-item">
-      <div class="tl-title">Яндекс.Лицей</div>
-      <div class="tl-desc">2 года · школьная программа</div>
+      <div class="tl-title"><a href="https://lms.yandex.ru/certificate/check">Яндекс.Лицей</a></div>
+      <div class="tl-desc">2 года · номер: <a class="copyable">2302157386</a></div>
     </div>
     <div class="tl-item">
-      <div class="tl-title">ТУСУР</div>
+      <div class="tl-title"><a href="https://tusur.ru/ru">ТУСУР</a></div>
       <div class="tl-desc">3 курс бакалавриата<br>11.03.04</div>
     </div>
     <div class="tl-item">
-      <div class="tl-title">Xtronik</div>
+      <div class="tl-title"><a href="https://xtronik.ru/#question">Xtronik</a></div>
       <div class="tl-desc">пол года · full-stack<br>embedded + backend</div>
     </div>
   </div>
@@ -152,6 +152,32 @@
     </ul>
   </div>
 </div>
+<script>
+document.querySelectorAll('.copyable').forEach(el => {
+  el.addEventListener('click', async () => {
+    const text = el.dataset.copy || el.textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+      const original = el.textContent;
+      el.textContent = 'скопировано';
+      el.classList.add('copied');
+      setTimeout(() => {
+        el.textContent = original;
+        el.classList.remove('copied');
+      }, 1200);
+    } catch (e) {
+      // fallback for older browsers
+      const range = document.createRange();
+      range.selectNode(el);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.execCommand('copy');
+      sel.removeAllRanges();
+    }
+  });
+});
+</script>
 
 </body>
 </html>

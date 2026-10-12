@@ -5,6 +5,7 @@
   --muted: #5a5a5a;
   --border: #e0e4ea;
   --primary: #2b6cb0;
+  --primary2: #D18017;
   --primary-soft: #ebf4ff;
   --accent: #2b6cb0;
   --radius: 10px;
@@ -134,10 +135,33 @@ hr {
   margin-left: 6px;
 }
 
+.tl-title a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 .tl-desc {
   font-size: 12px;
   color: var(--muted);
   margin-left: 6px;
+}
+
+.copyable {
+  cursor: pointer;
+  color: var(--primary);
+  border-bottom: 1px dashed var(--primary);
+  transition: color 0.15s, border-color 0.15s;
+  user-select: none;
+}
+
+.copyable:hover {
+  color: var(--primary2);
+  border-bottom-color: var(--primary2);
+}
+
+.copyable.copied {
+  color: #1e7e34;
+  border-bottom-color: #1e7e34;
 }
 
 /* Проекты */
